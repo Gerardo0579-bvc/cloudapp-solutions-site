@@ -34,7 +34,7 @@ jobs:
             sudo mkdir project/cloudapp-solutions-site
             sudo mv index.html project/cloudapp-solutions-site
             sudo mv README.md project/cloudapp-solutions-site
-            sudo mv css/* project/cloudapp-solutions-site/css
+            sudo mv css/ project/cloudapp-solutions-site/
             cd project
             sudo yum update -y
             sudo yum install docker -y
