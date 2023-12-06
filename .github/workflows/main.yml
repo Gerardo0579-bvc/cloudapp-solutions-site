@@ -31,7 +31,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo mkdir project
-            sudo mkdir cloudapp-solutions-site
+            sudo mkdir project/cloudapp-solutions-site
             sudo mv index.html project/cloudapp-solutions-site
             sudo mv README.md project/cloudapp-solutions-site
             sudo mv css/* project/cloudapp-solutions-site/css
@@ -40,7 +40,7 @@ jobs:
             sudo yum install docker -y
             sudo systemctl start docker
             sudo docker login -u="gerardo0579bvc" -p=${{ secrets.DOCKER_PASS }} docker.io
-            sudo echo -e "FROM httpd:2.4\nCOPY ./cloudapp-solutions-site/ /usr/local/apache2/htdocs" > Dockerfile
+            sudo echo -e "FROM httpd:2.4\nCOPY ./cloudapp-solutions-site/ /usr/local/apache2/htdocs" > Dockerfiles
             sudo docker build -t cloudappsolutions-image .
             sudo docker tag "$(sudo docker images -q cloudappsolutions-image)" gerardo0579bvc/cloudappsolutions-image:version1.0
             sudo docker push gerardo0579bvc/cloudappsolutions-image:version1.0
