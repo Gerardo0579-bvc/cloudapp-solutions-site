@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 20em;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 5em;
+  font-weight: 700;
+  font-variant: small-caps;
+  font-stretch: expanded;
+  color: white;
+  text-shadow: 1px 1px 3px #484848;
+  text-align: center;
+  vertical-align: middle;
+}
+p {
+  font-size: 20px;
+  color: black;
+  text-align: justify;
+}
+header p {
+  color: white;
+}
+
+nav {
+  width: 100%;
+  height: 4em;
+  background-color: whitesmoke;
+  box-shadow: 3px 0 5px -3px #484848;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+nav ul li {
+  height: 100%;
+  display: block;
+  line-height: 4em;
+}
+nav ul li a {
+  height: 100%;
+  text-decoration: none;
+  text-shadow: 1px 0 3px #e4e4e4;
+  color: black;
+  font-size: 2em;
+}
+nav ul li a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: dodgerblue;
+  text-shadow: 1px 0 3px #a8a8a8;
+  font-weight: 700;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.5em;
+}
+
+article {
+  padding: 3em 7em;
+}
+article h2 {
+  font-size: 3em;
+  font-variant: small-caps;
+  margin-bottom: 0.5em;
+}
+article section h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-shadow: 1px 0 1px #484848;
+}
+article .section-wrapper {
+  margin: 1em 0 3em 0;
+  display: flex;
+  flex-direction: row;
+  flex: 33.3%;
+  gap: 1.5em;
+}
+
+article .section-wrapper section {
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #a8a8a8;
+  padding: 1.5em;
+  width: calc(100% - 3em);
+  background: linear-gradient(
+      135deg,
+      rgb(253, 253, 253) 21px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        rgb(253, 253, 253) 21px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: rgb(253, 253, 253);
+  background-size: 64px 128px;
+}
+
+article .section-wrapper section:hover {
+  box-shadow: 0 3px 7px #909090;
+  background-color: white;
+}
