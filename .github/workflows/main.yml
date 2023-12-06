@@ -36,7 +36,6 @@ jobs:
             sudo yum install git -y
             sudo yum install docker -y
             sudo systemctl start dockersudo docker login -u="gerardo0579bvc" -p=${{ secrets.DOCKER_PASS }} docker.io
-            cd "~/bowvalley/clcm3404/docker_project"
             sudo apt install git -y
             sudo git clone https://github.com/Gerardo0579-bvc/cloudapp-solutions-site
             echo -e "FROM httpd:2.4\nCOPY ./cloudapp-solutions-site/ /usr/local/apache2/htdocs" > Dockerfile
