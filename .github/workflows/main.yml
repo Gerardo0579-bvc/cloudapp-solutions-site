@@ -30,6 +30,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo mkdir project
-            cd project
+            sudo yum update -y
             
