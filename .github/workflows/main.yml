@@ -32,7 +32,7 @@ jobs:
           script: |
             sudo mkdir project
             sudo mkdir cloudapp-solutions-site
-            sudo mv index /project/cloudapp-solutions-site
+            sudo mv index.html /project/cloudapp-solutions-site
             sudo mv README.md /project/cloudapp-solutions-site
             sudo mv css/* /project/cloudapp-solutions-site/css
             cd project
